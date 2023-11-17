@@ -103,7 +103,7 @@ a {
         display: flex;
         flex-direction: column;
         background-color: white;
-        height: 350px;
+        height: auto;
         width: 250px;
         border: 30px 30px;
         align-items: center;
