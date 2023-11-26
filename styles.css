@@ -37,7 +37,7 @@ a {
 
     }
 
-    .appbaritem{
+    .appbaritem {
         right: 0px;
         margin: 15px 0;
         padding: 15px 25px;
@@ -81,7 +81,7 @@ a {
     }
 
     footer {
-        text-align: end;
+        text-align: start;
         position: relative;
         bottom: 0;
         font-size: 30px;
@@ -149,7 +149,8 @@ a {
     }
 
     .contact-box {
-        padding: 20px;
+        margin: 0;
+        padding: 0;
         justify-content: center;
         align-content: center;
         display: flex;
@@ -163,19 +164,24 @@ a {
     }
 
     .contact-details-box>h3 {
-        margin: 0px;
         font-size: 19px;
     }
 
     .contact-details-box>img {
-        width: 60%;
-        height: 60%;
+        width: 40pt;
+        height: 40pt;
         border-radius: 50%;
         padding: 10px;
         margin: 0;
         background-color: #ff7f40;
         grid-row-start: span 2;
+        object-fit: cover;
 
+    }
+
+    #linkedin,
+    #github {
+        background-color: white;
     }
 
     .contact-details-box {
@@ -185,6 +191,12 @@ a {
         grid-template-rows: auto;
         justify-content: baseline;
 
+
+    }
+
+    .contact_links {
+        display: flex;
+        justify-content: space-between;
     }
 
     .img-hover {
@@ -192,8 +204,7 @@ a {
         background-color: #ff7f40;
     }
 
-    .appbaritem:hover
-    {
+    .appbaritem:hover {
         font-size: 18px;
         background-color: #ff7f40;
         border-radius: 15px;
