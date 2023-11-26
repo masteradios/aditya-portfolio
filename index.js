@@ -1,44 +1,58 @@
-var box1=document.getElementsByClassName("skill-box")[0];
-box1.addEventListener('mouseover',function handlemouseover()
-{
-   box1.classList.add("img-hover");
-   box1.querySelector("img").setAttribute("src","./assets/click.png")
+var numberofCards = document.querySelectorAll(".skill-box").length;
+for (var i = 0; i < numberofCards; i++) {
+   var skill = document.querySelectorAll(".skill-box")[i].addEventListener("mouseover", function () {
+      var skillinnerHTML = this.querySelector("h2").innerHTML;
+      switch (skillinnerHTML) {
+         case "Website Design":
+            this.classList.add("img-hover");
+            this.querySelector("img").setAttribute("src", "./assets/click.png");
+            break;
+            case "Development":
+               this.classList.add("img-hover");
+               this.querySelector("img").setAttribute("src", "./assets/web-programming (1).png");
+               break;
+               case "Mobile App Design":
+                  this.classList.add("img-hover");
+                  this.querySelector("img").setAttribute("src", "./assets/smartphone.png");
+                  break;
+               default:
+                  console.log(skillinnerHTML);
 
-});
+      }
+   });
 
-box1.addEventListener('mouseout',function handlemouseout()
-{
-    box1.querySelector("img").setAttribute("src","./assets/click (1).png")
-   box1.classList.remove("img-hover");
+}
 
-});
+for (var i = 0; i < numberofCards; i++) {
+   var skill = document.querySelectorAll(".skill-box")[i].addEventListener("mouseout", function () {
+      var skillinnerHTML = this.querySelector("h2").innerHTML;
+      switch (skillinnerHTML) {
+         case "Website Design":
+            this.classList.remove("img-hover");
+            this.querySelector("img").setAttribute("src", "./assets/click (1).png");
+            break;
+            case "Development":
+               this.classList.remove("img-hover");
+               this.querySelector("img").setAttribute("src", "./assets/web-programming.png");
+               break;
+               case "Mobile App Design":
+                  this.classList.remove("img-hover");
+                  this.querySelector("img").setAttribute("src", "./assets/smartphone (1).png");
+                  break;
+               default:
+                  console.log(skillinnerHTML);
 
-var box2=document.getElementsByClassName("skill-box")[1];
-box2.addEventListener('mouseover',function handlemouseover()
-{
-   box2.classList.add("img-hover");
-   box2.querySelector("img").setAttribute("src","./assets/web-programming (1).png")
+      }
+   });
 
-});
+}
 
-box2.addEventListener('mouseout',function handlemouseout()
-{
-    box2.querySelector("img").setAttribute("src","./assets/web-programming.png")
-   box2.classList.remove("img-hover");
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+   anchor.addEventListener('click', function (e) {
+       e.preventDefault();
 
-});
-
-var box3=document.getElementsByClassName("skill-box")[2];
-box3.addEventListener('mouseover',function handlemouseover()
-{
-   box3.classList.add("img-hover");
-   box3.querySelector("img").setAttribute("src","./assets/smartphone.png")
-
-});
-
-box3.addEventListener('mouseout',function handlemouseout()
-{
-    box3.querySelector("img").setAttribute("src","./assets/smartphone (1).png")
-   box3.classList.remove("img-hover");
-
+       document.querySelector(this.getAttribute('href')).scrollIntoView({
+           behavior: 'smooth'
+       });
+   });
 });
