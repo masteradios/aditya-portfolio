@@ -96,6 +96,7 @@ a {
     }
 
     .skill-box {
+        overflow: hidden;
         margin-top: 1rex;
         box-shadow: 10px 10px 10px rgb(147, 136, 136);
         border-radius: 20px;
@@ -124,9 +125,26 @@ a {
     }
 
     .skill-box>p {
+        flex: auto;
+        margin: 0;
+        object-fit: fill;
         text-align: center;
         padding: 10px;
         background-color: transparent;
+    }
+
+    .redirect-button {
+        border: 0;
+        border-radius: 11pt;
+        width: 10em;
+
+        margin-bottom: 8px;
+    }
+
+    .redirect-button>img {
+        object-fit: contain;
+        width: 5ex;
+        height: 5ex;
     }
 
     .tools {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Elements in Flexbox</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    .equal-height-div {
+      flex: 1;
+      height: auto; /* Adjust the height as needed */
+      overflow: hidden;
+      border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+      margin-right: 10px; /* Optional: Add margin between divs */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Optional: Add padding for better spacing */
+    }
+
+    .equal-height-div:last-child {
+      margin-right: 0; /* Remove margin from the last div to prevent extra spacing */
+    }
+
+    .equal-height-div img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .equal-height-div p {
+      margin: 0; /* Remove default margin for paragraphs */
+    }
+  </style>
+</head>
+<body>
+  <div class="equal-height-div">
+    <p>Your first paragraph content goes here.</p>
+    <img src="./assets/share.png" alt="Share Image">
+  </div>
+  
+  <div class="equal-height-div">
+    <p>Proficient in various languages and frameworks, I develop robust and efficient solutions, leveraging my
+        expertise in coding and problem-solving to build scalable applications that meet both user needs and
+        business goals..</p>
+    <img src="./assets/share.png" alt="Share Image">
+  </div>
+  
+  <div class="equal-height-div">
+    <p>I specialize in mobile design, creating interfaces that are intuitive and visually striking, optimizing
+        user experience on diverse devices through responsive and adaptive designs.</p>
+    <img src="./assets/share.png" alt="Share Image">
+  </div>
+</body>
+</html>
