@@ -15,6 +15,10 @@ for (var i = 0; i < numberofCards; i++) {
             this.classList.add("img-hover");
             this.querySelector("img").setAttribute("src", "./assets/smartphone.png");
             break;
+            case "Power BI Visualizations":
+               this.classList.add("img-hover");
+               this.querySelector("img").setAttribute("src", "./assets/monitor (1).png");
+               break;
          default:
             console.log(skillinnerHTML);
 
@@ -39,6 +43,11 @@ for (var i = 0; i < numberofCards; i++) {
             this.classList.remove("img-hover");
             this.querySelector("img").setAttribute("src", "./assets/smartphone (1).png");
             break;
+            case "Power BI Visualizations":
+               this.classList.remove("img-hover");
+               this.querySelector("img").setAttribute("src", "./assets/monitor.png");
+               break;
+            
          default:
             console.log(skillinnerHTML);
 
@@ -88,6 +97,13 @@ document.querySelectorAll(".skill-box")[i].querySelector("button").addEventListe
                '_blank'
             );
             break;
+            case "Power BI Visualizations":
+               window.open(
+                  'https://github.com/masteradios/cricket-analysis',
+                  '_blank'
+               );
+               break;
+            
          default:
             console.log(skillinnerHTML);
 
