@@ -3,7 +3,7 @@ for (var i = 0; i < numberofCards; i++) {
    var skill = document.querySelectorAll(".skill-box")[i].addEventListener("mouseover", function () {
       var skillinnerHTML = this.querySelector("h2").innerHTML;
       switch (skillinnerHTML) {
-         case "Website Design":
+         case "Proficiency in Big Data Solutions":
             this.classList.add("img-hover");
             this.querySelector("img").setAttribute("src", "./assets/click.png");
             break;
@@ -31,7 +31,7 @@ for (var i = 0; i < numberofCards; i++) {
    document.querySelectorAll(".skill-box")[i].addEventListener("mouseout", function () {
       var skillinnerHTML = this.querySelector("h2").innerHTML;
       switch (skillinnerHTML) {
-         case "Website Design":
+         case "Proficiency in Big Data Solutions":
             this.classList.remove("img-hover");
             this.querySelector("img").setAttribute("src", "./assets/click (1).png");
             break;
@@ -79,9 +79,9 @@ for (var i = 0; i < numberofCards; i++) {
 document.querySelectorAll(".skill-box")[i].querySelector("button").addEventListener("click", function () {
       var skillinnerHTML = this.parentNode.querySelector("h2").innerHTML;
       switch (skillinnerHTML) {
-         case "Website Design":
+         case "Proficiency in Big Data Solutions":
             window.open(
-               '',
+               'https://www.linkedin.com/posts/aditya-kushwaha-264467269_datamigration-apachesqoop-hdfs-activity-7202334541342994433-9Kji?utm_source=share&utm_medium=member_desktop',
                '_blank'
             );
             break;
